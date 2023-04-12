@@ -5,7 +5,7 @@ public class EventTracker implements Tracker {
 
     private static EventTracker INSTANCE = new EventTracker();
 
-    private Map<String, Integer> tracker;
+    private static Map<String, Integer> tracker;
 
     private EventTracker() {
         this.tracker = new HashMap<>();
@@ -17,7 +17,7 @@ public class EventTracker implements Tracker {
 
     @Override
     public Map<String, Integer> tracker() {
-        return null;
+        return tracker;
     }
 
     synchronized public void push(String message) {
