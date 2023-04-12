@@ -42,7 +42,7 @@ public class EventTrackerTest {
         testList.put("test", 1);
         EventTracker eventTracker = new EventTracker(testList);
 
-        boolean trackerHasTest = eventTracker.has("test");
+        Boolean trackerHasTest = eventTracker.has("test");
 
         Assert.assertTrue(trackerHasTest);
     }
